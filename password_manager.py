@@ -42,7 +42,7 @@ while(True):
     elif(n==4):
         account = input("Enter Account\n")
         if account in locker:
-            print("Passsword '{}' copied for account '{}' \n".format(locker.get(account),account))
+            print("Passsword '{}' for account '{}' copied to Clipboard \n".format(locker.get(account),account))
             pyperclip.copy(locker.get(account))
         else:
             print("Account not in locker !!\n")
